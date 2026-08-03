@@ -1,0 +1,62 @@
+import { Navbar } from "@/components/Navbar";
+import { HeroSection } from "@/components/HeroSection";
+import { ProductPreview } from "@/components/ProductPreview";
+import { LogosBar } from "@/components/LogosBar";
+import { NewSpeciesSection } from "@/components/NewSpeciesSection";
+import { BentoSection } from "@/components/BentoSection";
+import {
+  FeatureSection,
+  INTAKE_SECTION,
+  PLAN_SECTION,
+  BUILD_SECTION,
+  DIFFS_SECTION,
+  MONITOR_SECTION,
+} from "@/components/FeatureSection";
+import { IntakeMockup } from "@/components/mockups/IntakeMockup";
+import { PlanMockup } from "@/components/mockups/PlanMockup";
+import { BuildMockup } from "@/components/mockups/BuildMockup";
+import { DiffsMockup } from "@/components/mockups/DiffsMockup";
+import { MonitorMockup } from "@/components/mockups/MonitorMockup";
+import { HowItWorksSection } from "@/components/HowItWorksSection";
+import { DeveloperSection } from "@/components/DeveloperSection";
+import { FAQSection } from "@/components/FAQSection";
+import { CTASection } from "@/components/CTASection";
+import { Footer } from "@/components/Footer";
+
+export default function Home() {
+  return (
+    <main style={{ background: "var(--sx-bg)", minHeight: "100vh" }}>
+      <Navbar />
+
+      <HeroSection />
+
+      <ProductPreview />
+
+      <LogosBar />
+
+      <NewSpeciesSection />
+
+      <BentoSection />
+
+      <FeatureSection {...INTAKE_SECTION} mockup={<IntakeMockup />} />
+
+      <FeatureSection {...PLAN_SECTION} mockup={<PlanMockup />} />
+
+      <FeatureSection {...BUILD_SECTION} mockup={<BuildMockup />} />
+
+      <FeatureSection {...DIFFS_SECTION} mockup={<DiffsMockup />} />
+
+      <FeatureSection {...MONITOR_SECTION} mockup={<MonitorMockup />} />
+
+      <HowItWorksSection />
+
+      <DeveloperSection />
+
+      <FAQSection />
+
+      <CTASection />
+
+      <Footer />
+    </main>
+  );
+}
