@@ -45,7 +45,7 @@ export function HeroSection() {
         <div style={{ maxWidth: 900 }}>
           <div className="sx-overline sx-rise flex items-center" style={{ gap: 10 }}>
             <span className="sx-dot sx-dot-live" />
-            <span>Live on Robinhood Chain</span>
+            <span>$SECTORAL - 0x6effbf4438140222b8a6e7bd0dc3245206946fce</span>
           </div>
 
           <h1 className="sx-display sx-rise sx-d1" style={{ marginTop: 26 }}>
