@@ -70,12 +70,6 @@ export const icons = {
       <path d="M6.6 13a1.6 1.6 0 0 0 2.8 0" />
     </svg>
   ),
-  status: (
-    <svg width="16" height="16" viewBox="0 0 16 16" {...ICON_STROKE} aria-hidden="true">
-      <circle cx="8" cy="8" r="6.2" />
-      <path d="M4.5 8h2l1-2.2 1.6 4.4 1-2.2h1.9" />
-    </svg>
-  ),
   settings: (
     <svg width="16" height="16" viewBox="0 0 16 16" {...ICON_STROKE} aria-hidden="true">
       <circle cx="8" cy="8" r="2.2" />
@@ -107,7 +101,6 @@ export const NAV_GROUPS: { label: string; items: NavItem[] }[] = [
     items: [
       { label: "API Keys", href: "/app/keys", icon: icons.keys },
       { label: "Alerts", href: "/app/alerts", icon: icons.alerts },
-      { label: "System Status", href: "/status", icon: icons.status },
     ],
   },
 ];

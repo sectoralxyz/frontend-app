@@ -77,25 +77,6 @@ export function Footer() {
             <p className="sx-small" style={{ marginTop: 22, maxWidth: 280 }}>
               Private banking for people and the AI agents working for them. Runs on Robinhood Chain with Ethereum security underneath.
             </p>
-            <Link
-              href="/status"
-              className="inline-flex items-center hover:!border-[var(--sx-line-strong)] transition-colors"
-              style={{
-                marginTop: 24,
-                gap: 10,
-                height: 34,
-                padding: "0 14px",
-                borderRadius: 999,
-                border: "1px solid var(--sx-line)",
-                background: "var(--sx-surface)",
-                textDecoration: "none",
-              }}
-            >
-              <span className="sx-dot sx-dot-live" />
-              <span className="sx-overline" style={{ color: "var(--sx-text-2)", letterSpacing: "0.16em" }}>
-                Every system is up
-              </span>
-            </Link>
           </div>
 
           {/* Link columns */}
@@ -137,10 +118,6 @@ export function Footer() {
             © {new Date().getFullYear()} Sectoral. Confidential from the start, provable at every step.
           </span>
           <div className="flex items-center" style={{ gap: 22 }}>
-            <Link href="/status" className={`sx-overline inline-flex items-center ${linkClass}`} style={{ gap: 8, textDecoration: "none" }}>
-              <span className="sx-dot sx-dot-live" />
-              Status
-            </Link>
             <Link href="/roadmap" className={`sx-overline ${linkClass}`} style={{ textDecoration: "none" }}>
               What&apos;s next
             </Link>
